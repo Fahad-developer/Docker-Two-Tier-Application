@@ -1,5 +1,3 @@
-Here’s your text fully translated into **clear and professional English** 👇
-
 ---
 
 ## 🚀 Two-Tier Flask Application with Docker Compose
@@ -83,5 +81,3 @@ docker-compose down -v
 ```
 
 ---
-
-Would you like me to format this as a **README.md file** (with proper Markdown headings, bullets, and code blocks)? It’ll look professional for GitHub.
