@@ -1,55 +1,87 @@
-Two-Tier Flask Application with Docker Compose 🚀
-Yeh project ek two-tier web application hai, jise Docker aur Docker Compose ka istemal karke banaya gaya hai. Isme ek Flask web app (frontend) aur ek MySQL database (backend) alag-alag containers mein chalte hain.
+Here’s your text fully translated into **clear and professional English** 👇
 
-Is application ki madad se, users messages daal sakte hain aur unhe dekh bhi sakte hain. Saare messages database mein store hote hain, jo is project ke poore data flow ko dikhata hai.
+---
 
-🛠️ Tech Stack & Tools
-Backend Framework: Flask (Python)
-Ek lightweight web framework jo HTTP requests ko handle karta hai aur HTML pages ko render karta hai.
+## 🚀 Two-Tier Flask Application with Docker Compose
 
-Database: MySQL
-Ek powerful database jo saare messages ko permanently store karta hai.
+This project is a **two-tier web application** built using **Docker** and **Docker Compose**. It includes a **Flask web application (frontend)** and a **MySQL database (backend)** running in separate containers.
 
-Containerization: Docker
-Application aur database ko alag-alag, isolated containers mein package karne ke liye istemal hota hai.
+With this application, users can **submit and view messages**. All messages are stored in the database, demonstrating the complete data flow of the system.
 
-Orchestration: Docker Compose
-Iska upyog ek se zyada containers ko ek saath chalane aur unhe jod ne ke liye kiya jaata hai.
+---
 
-⚙️ Key Architectural Concepts
-Two-Tier Architecture: Application aur database ko do alag-alag layers mein baanta gaya hai, jis se code saaf rehta hai.
+### 🛠️ Tech Stack & Tools
 
-Containerization: Dono services containers mein chalte hain, jo har jagah ek jaisa environment dete hain.
+**Backend Framework:** **Flask (Python)**
+A lightweight web framework that handles HTTP requests and renders HTML pages.
 
-Environment Variables: Security ke liye, sensitive information (jaise database passwords) ko code mein nahi, balki environment variables mein store kiya gaya hai.
+**Database:** **MySQL**
+A powerful database used to permanently store all user messages.
 
-Service Healthchecks: Docker Compose ko is tarah se configure kiya gaya hai ki Flask app tabhi start ho jab MySQL database poori tarah se ready ho.
+**Containerization:** **Docker**
+Used to package the application and database into isolated containers for consistency across environments.
 
-🚀 How to Run the Project
-Is project ko chalane ke liye, bas in simple steps ko follow karein.
+**Orchestration:** **Docker Compose**
+Used to run and connect multiple containers together seamlessly.
 
-Prerequisites
-Aapke system par Docker aur Docker Compose installed hona zaroori hai.
+---
 
-Steps to Deploy
-Clone the Repository:
+### ⚙️ Key Architectural Concepts
 
-git clone [https://github.com/Fahad-developer/Docker-Two-Tier-Application.git](https://github.com/Fahad-developer/Docker-Two-Tier-Application.git)
-cd Docker-Two-Tier-Application
+**Two-Tier Architecture:**
+The application and database are divided into two separate layers, keeping the codebase clean and modular.
 
-Build and Run the Containers:
-Yeh command containers ko build aur run karegi.
+**Containerization:**
+Both services run inside containers, providing a consistent environment everywhere.
 
-docker-compose up --build -d
+**Environment Variables:**
+Sensitive data (like database passwords) are stored securely in environment variables instead of hardcoding them.
 
-Access the Application:
-Containers chalne ke baad, aap browser mein app ko access kar sakte hain.
+**Service Health Checks:**
+Docker Compose is configured so that the Flask app starts **only after** the MySQL database is fully ready.
 
-Local deployment: http://localhost:5000
+---
 
-Cloud server (e.g., EC2): http://<your-server-public-ip-address>:5000
+### 🚀 How to Run the Project
 
-🧹 Cleaning Up
-Containers ko rokne aur unhe hatane ke liye yeh command use karein:
+Follow these simple steps to deploy and run the project.
 
+#### **Prerequisites**
+
+Make sure **Docker** and **Docker Compose** are installed on your system.
+
+#### **Steps to Deploy**
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/Fahad-developer/Docker-Two-Tier-Application.git
+   cd Docker-Two-Tier-Application
+   ```
+
+2. **Build and Run the Containers:**
+   This command will build and start both containers.
+
+   ```bash
+   docker-compose up --build -d
+   ```
+
+3. **Access the Application:**
+   Once the containers are running, open the application in your browser:
+
+   * **Local deployment:** [http://localhost:5000](http://localhost:5000)
+   * **Cloud server (e.g., EC2):** `http://<server-ip>:5000`
+
+---
+
+### 🧹 Cleaning Up
+
+To stop and remove the containers (including volumes), run:
+
+```bash
 docker-compose down -v
+```
+
+---
+
+Would you like me to format this as a **README.md file** (with proper Markdown headings, bullets, and code blocks)? It’ll look professional for GitHub.
